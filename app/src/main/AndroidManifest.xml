@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+    <application
+        android:name=".data.AppData"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/image1_0"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/image1_0"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LiveBin"
+        tools:targetApi="31">
+
+        <service android:name=".utils.LocationService"
+            android:exported="false"
+            android:foregroundServiceType="location"/>
+        <service android:name=".utils.SyncService"
+            android:exported="false"
+            android:enabled="true"/>
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:exported="false"
+            android:label="@string/sign_in">
+        </activity>
+        <activity android:name=".ui.activities.SignUpActivity"
+            android:exported="false"
+            android:label="@string/sign_up"
+            android:parentActivityName=".ui.activities.LoginActivity"/>
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="false"
+            android:label="@string/main_activity"/>
+        <activity android:name=".ui.activities.SettingActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:label="@string/setting"/>
+        <activity android:name=".ui.activities.ReceivedActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:label="@string/received"/>
+        <activity android:name=".ui.activities.MapActivity"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:exported="false"
+            android:label="@string/map"/>
+        <activity android:name=".ui.activities.CustomersActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:label="@string/customers"/>
+        <activity android:name=".ui.activities.AddCustomerActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:label="@string/add_customer"/>
+        <activity android:name=".ui.activities.AddReceivedActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.activities.ReceivedActivity"
+            android:label="@string/add_received"/>
+    </application>
+
+</manifest>

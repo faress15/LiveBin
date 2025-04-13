@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">LiveBin</string>
+    <string name="username">نام کاربری</string>
+    <string name="password">رمز عبور</string>
+    <string name="sign_in">ورود</string>
+    <string name="sign_up">ثبت نام</string>
+    <string name="first_and_last_name">نام و نام خانوادگی</string>
+    <string name="date_of_birth">تاریخ تولد</string>
+    <string name="yyyy_mm_dd">تاریخ تولد (سال/ماه/روز)</string>
+    <string name="performance1">بازاریاب</string>
+    <string name="performance2">مامور وصول</string>
+    <string-array name="performance_options">
+        <item>بازاریاب</item>
+        <item>مامور وصول</item>
+    </string-array>
+    <string name="identification_code">کد ملی</string>
+    <string name="identification_hint">عدد 10 رقمی وارد کنید</string>
+    <string name="scan_identification_code">بارکد اسکنر</string>
+    <string name="error_invalid_login">ورود نامعتبر</string>
+    <string name="error_invalid_password">رمز عبور نامعتبر است</string>
+    <string name="performance">نقش</string>
+    <string name="confirmPassword">تایید رمز عبور</string>
+    <string name="error_invalid_first_name">نام نامعتبراست</string>
+    <string name="error_unique_password">رمز عبور مطابقت ندارد</string>
+    <string name="error_wrong_identification_code">کد ملی نامعتبر است</string>
+    <string name="error_invalid_age">سن نامعتبر است</string>
+    <string name="scan_your_card">کارت ملی خود را اسکن کنید</string>
+    <string name="scan_cancelled">اسکن لغو شد</string>
+    <string name="barcode">بارکد اسکن شده:</string>
+    <string name="day_of_birth">روز\n</string>
+    <string name="month_of_birth">ماه</string>
+    <string name="year_of_birth">سال</string>
+    <string name="network_connection_error">خطای اتصال به شبکه</string>
+    <string name="network_general_error">خطای عمومی شبکه</string>
+    <string name="network_json_error">خطای json شبکه</string>
+    <string name="title_dialog">در حال پردازش</string>
+    <string name="title_dialog_message">لطفا منتظر بمانید</string>
+    <string name="user_signup_success">ثبت نام با موفقیت انجام شد</string>
+    <string name="date_example">مثال:1301/1/1</string>
+    <string name="right_password">انگلیسی وارد کنید</string>
+    <string name="_0">0</string>
+    <string name="admin_error_insert_failed">درج مدیریت ناموقف بود</string>
+    <string name="user_error_insert_failed">درج کاربر ناموفق بود</string>
+    <string name="error_update_failed">بروزرسانی ناموفق</string>
+    <string name="admin">ادمین\n</string>
+    <string name="add_customer">ثبت مشتری</string>
+    <string name="setting">تنظیمات</string>
+    <string name="map">نقشه</string>
+    <string name="add_received">ثبت دریافتی</string>
+    <string name="logout">خروج\n</string>
+    <string name="customer_error_insert_failed">درج مشتری ناموفق بود</string>
+    <string name="error_get_all_customers_failed">گرفتن تمام مشتری ها ناموفق بود</string>
+    <string name="customers">مشتریان</string>
+    <string name="received">دریافتی ها</string>
+    <string name="shop_area">متراژ مغازه:</string>
+    <string name="customer_name">نام مشتری:</string>
+    <string name="phone_number">شماره تلفن: </string>
+    <string name="error_name_empty">نام مشتری را وارد بکنید</string>
+    <string name="error_phoneNumber_empty">شماره تلفن را وارد کنید</string>
+    <string name="error_shopArea_empty">متراژ مغازه را وارد کنید(متر)</string>
+    <string name="location_permission_required">لطفاً دسترسی به لوکیشن را فعال کنید</string>
+    <string name="start_working">شروع به کار</string>
+    <string name="stop_working">توقف کار</string>
+    <string name="location_error_insert_failed">درج لوکیشن ناموفق بود\n</string>
+    <string name="location_permission_denied">مجوز موقعیت داده نشد</string>
+    <string name="internet_available">اینترنت در دسترس هست</string>
+    <string name="internet_unAvailable">اینترنت در دسترس نیست</string>
+    <string name="error_saving_location">ذخیره لوکیشن با مشکل مواجه شد</string>
+    <string name="set_location">ثبت لوکیشن</string>
+    <string name="error_location_empty">لوکیشن را ثبت کنید</string>
+    <string name="choose_customer">انتخاب مشتری:</string>
+    <string name="typeOfReceived">نوع دریافتی:</string>
+    <string name="amount">مبلغ دریافتی:</string>
+    <string name="bank">بانک:</string>
+    <string-array name="bank_names">
+        <item>سپه</item>
+        <item>تجارت</item>
+        <item>ملی</item>
+        <item>کشاورزی</item>
+        <item>ملت</item>
+        <item>رفاه</item>
+        <item>صادرات</item>
+        <item>پاسارگاد</item>
+    </string-array>
+    <string name="check_code">کد چک:</string>
+    <string name="tracking_code">کد پیگیری:</string>
+    <string name="error_amount_empty">لطفا مبلغ را وارد کنید</string>
+    <string name="error_typeofreceived_empty">لطفا نوع پرداخت را مشخص کنید</string>
+    <string name="error_checkcode_empty">لطفا کد چک را وارد کنید</string>
+    <string name="error_trackingcode_empty">لطفا کد پیگیری را وارد کنید</string>
+    <string name="error_bankname_empty">لطفا نام بانک را انتخاب کنید</string>
+    <string name="enter_check_code">کد چک را وارد کنید</string>
+    <string name="choose_bank">انتخاب بانک:</string>
+    <string name="enter_amount">مبلغ دریافتی را وارد کنید(تومان)</string>
+    <string name="pos">پوز</string>
+    <string name="check">چک</string>
+    <string name="cash">وجه نقد</string>
+    <string name="enter_tracking_code">کد پیگیری را وارد کنید</string>
+    <string name="submit">ثبت</string>
+    <string name="Received_added">دریافتی با موفقیت ارسال شد</string>
+    <string name="login_success">ورود با موفقیت انجام شد</string>
+    <string name="error_get_all_Receipts_failed">دریافت تمام دریافتی ها با مشکل مواجه شد</string>
+    <string name="received_error_insert_failed">درج دریافتی با مشکل مواجه شد</string>
+    <string name="error_get_last_location_failed">دریافت آخرین موقعیت کاربر با مشکل مواجه شد</string>
+    <string name="location_not_found">لوکیشنی پیدا نشد</string>
+    <string name="main_activity">صفحه اصلی</string>
+    <string name="location_received">لوکیشن دریافت شد</string>
+    <string name="error_get_all_customers_name_failed">دریافت نام مشتری ها با مشکل مواجه شد</string>
+    <string name="add_customer_successfully">مشتری با موفقیت ثبت شد</string>
+    <string name="error_phoneNumber_invalid">شماره تلفن نامعتبر است</string>
+    <string name="error_invalid_month">ماه نامعتبر</string>
+    <string name="error_invalid_day">روز نامعتبر</string>
+    <string name="error_invalid_dayOfMonth">ماه وارد شده 30 روز دارد</string>
+    <string name="user_already_exist">کد ملی قبلا ثبت شده است</string>
+    <string name="error_invalid_input">ورودی ها نامعتبر است</string>
+    <string name="location_service_started">سرویس دریافت لوکیشن فعال شد</string>
+    <string name="location_service_stopped">سرویس دریافت لوکیشن متوقف شد</string>
+    <string name="location_service_already_running">سرویس از قبل فعال است</string>
+    <string name="location_service_not_running">سرویس در حال اجرا نیست</string>
+    <string name="Error_fetching_users">خطا در دریافت اطلاعات مشتری‌ها:</string>
+</resources>
