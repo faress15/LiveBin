@@ -11,7 +11,7 @@ public class Validator {
         return s.matches(regex);
     }
 
-    //    chatgpt
+
     public static boolean isIdentificationCodeValid(String nationalCode) {
         if (nationalCode == null || nationalCode.length() != 10 || !nationalCode.matches("\\d+")) {
             return false;

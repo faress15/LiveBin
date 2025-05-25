@@ -53,7 +53,7 @@ public class SettingActivity extends AppCompatActivity {
         actionBar.setHomeAsUpIndicator(backDrawable);
     }
 
-    //    android developer
+
     private void requestLocationPermission() {
 //        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
 //            if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ||
@@ -75,7 +75,7 @@ public class SettingActivity extends AppCompatActivity {
 
     }
 
-    //    chatgpt
+
     private void startLocationService() {
         if (!isLocationServiceRunning()) {
             Intent serviceIntent = new Intent(this, LocationService.class);
@@ -90,7 +90,7 @@ public class SettingActivity extends AppCompatActivity {
         }
     }
 
-    //    chatgpt
+
     private void stopLocationService() {
         if (isLocationServiceRunning()) {
             Intent serviceIntent = new Intent(this, LocationService.class);
@@ -101,7 +101,7 @@ public class SettingActivity extends AppCompatActivity {
         }
     }
 
-//    chatgpt
+
     private boolean isLocationServiceRunning() {
         ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
         for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
@@ -113,7 +113,7 @@ public class SettingActivity extends AppCompatActivity {
     }
 
 
-    //    android developer
+
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);

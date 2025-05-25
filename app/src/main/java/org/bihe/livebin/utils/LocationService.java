@@ -76,7 +76,7 @@ public class LocationService extends Service {
         return null;
     }
 
-//    chatgpt
+
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -95,7 +95,7 @@ public class LocationService extends Service {
     }
 
 
-//    chatgpt
+
     private void startLocationUpdates() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             stopSelf();
@@ -178,7 +178,7 @@ public class LocationService extends Service {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
-    //    chatgpt
+
     private boolean isInternetAvailable() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         if (connectivityManager == null) {
@@ -231,7 +231,7 @@ public class LocationService extends Service {
         });
     }
 
-    //    chatgpt
+
     private void stopLocationUpdates() {
         if (fusedLocationClient != null) {
             fusedLocationClient.removeLocationUpdates(locationCallback);
